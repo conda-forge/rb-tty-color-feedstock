@@ -1,5 +1,5 @@
 {% set name = "tty-color" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: aa0d80b42b651878cb7fefa07ec59fb15f22bcce4b594c05cb90cdd9e337f7fe
+  sha256: 572f93d7c07e03a18d38b6c837e2aba76c89a1575788d6f82fce3a96c2b5eb33
 
 build:
   noarch: generic
