@@ -5,7 +5,7 @@ Home: https://rubygems.org/gems/tty-color
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Terminal color capabilities detection
 
