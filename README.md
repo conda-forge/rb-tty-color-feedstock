@@ -5,11 +5,13 @@ Home: https://rubygems.org/gems/tty-color
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rb-tty-color-feedstock/blob/master/LICENSE.txt)
 
 Summary: Terminal color capabilities detection
 
+Development: https://github.com/piotrmurach/tty-color
 
+Documentation: https://www.rubydoc.info/gems/tty-color
 
 Current build status
 ====================
