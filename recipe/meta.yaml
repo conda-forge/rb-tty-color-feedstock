@@ -1,5 +1,5 @@
 {% set name = "tty-color" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 572f93d7c07e03a18d38b6c837e2aba76c89a1575788d6f82fce3a96c2b5eb33
+  sha256: 6f9c37ca3a4e2367fb2e6d09722762647d6f455c111f05b59f35730eeb24332a
 
 build:
   noarch: generic
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: {{ name }}-{{ version }}/LICENSE.txt
-  summary: 'Terminal color capabilities detection'
+  summary: Terminal color capabilities detection
   doc_url: https://www.rubydoc.info/gems/{{ name }}
   dev_url: https://github.com/piotrmurach/tty-color
 
