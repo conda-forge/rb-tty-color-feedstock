@@ -1,5 +1,5 @@
 {% set name = "tty-color" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -39,5 +39,5 @@ about:
 extra:
   recipe-maintainers:
     - sodre
+    - mxr-conda
     - mwilson8
-    - rluria14
