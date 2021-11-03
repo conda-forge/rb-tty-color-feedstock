@@ -1,5 +1,5 @@
 {% set name = "tty-color" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,13 +7,14 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 572f93d7c07e03a18d38b6c837e2aba76c89a1575788d6f82fce3a96c2b5eb33
+  sha256: 6f9c37ca3a4e2367fb2e6d09722762647d6f455c111f05b59f35730eeb24332a
 
 build:
   noarch: generic
   number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
+    # - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
+    - gem install -N -l -V --norc --ignore-dependencies -n $PREFIX/bin {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
   skip: {{ win }}
 
@@ -21,7 +22,7 @@ requirements:
   host:
     - ruby
   run:
-    - ruby
+    - {{ pin_compatible('ruby', max_pin='x.x') }}
 
 test:
   commands:
@@ -39,5 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - sodre
-    - mwilson8
-    - rluria14
+    - mxr-conda
